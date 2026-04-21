@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+; Para el fondo de las carpetas
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenPowerShellHere]
+@="Abrir PowerShell aqui"
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenPowerShellHere\command]
+@="powershell.exe -NoExit -Command Set-Location '%V'"
+
+; Para las carpetas (al hacer clic sobre el icono de una carpeta)
+[HKEY_CLASSES_ROOT\Directory\shell\OpenPowerShellHere]
+@="Abrir PowerShell aqui"
+"Icon"="powershell.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\OpenPowerShellHere\command]
+@="powershell.exe -NoExit -Command Set-Location '%V'"
