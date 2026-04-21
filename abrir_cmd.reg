@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+; Para el fondo de las carpetas
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenCMDHere]
+@="Abrir CMD aqui"
+"Icon"="cmd.exe"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\OpenCMDHere\command]
+@="cmd.exe /s /k pushd \"%V\""
+
+; Para las carpetas (al hacer clic sobre el icono de una carpeta)
+[HKEY_CLASSES_ROOT\Directory\shell\OpenCMDHere]
+@="Abrir CMD aqui"
+"Icon"="cmd.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\OpenCMDHere\command]
+@="cmd.exe /s /k pushd \"%1\""
